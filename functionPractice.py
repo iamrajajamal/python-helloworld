@@ -34,3 +34,13 @@ def print_str_int(name = "Anyone" ,age = "Unknown"):
     print("My Name is",name,"and my age is",age)
 
 print_str_int(age=24, name="Jamal")
+
+
+# Infinite Arguments
+
+def print_people(*people):
+    print("Infinte Argument")
+    for person in people:
+        print("This person is", person)
+
+print_people("Jamal","Ali","Murtaza","Mustafa","Zulfeqar")
