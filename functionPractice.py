@@ -44,3 +44,14 @@ def print_people(*people):
         print("This person is", person)
 
 print_people("Jamal","Ali","Murtaza","Mustafa","Zulfeqar")
+
+
+# Return Value From Functions
+
+def do_maths(num1,num2):
+    return num1+num2
+
+add1= do_maths(4,5)
+add2=do_maths(3,9)
+print("Return Values")
+print("First sum is",add1,"Second sum is",add2)
