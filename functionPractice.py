@@ -4,9 +4,10 @@ def my_function():
 
 my_function()
 
-def add():
-    x=5
-    y=8
-    print(x+y)
 
-add()
+
+def my_function_param(str1,str2):
+    print(str1)
+    print(str2)
+
+my_function_param("First Argument","Second Argument")
