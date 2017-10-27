@@ -2,7 +2,27 @@
 
 import random
 
-'''Class Practice'''
+
+class Enemy:
+
+    def __init__(self, attack_low, attack_high):
+        self.attack_low = attack_low
+        self.attack_high = attack_high
+
+    def get_attack(self):
+        print(self.attack_low)
+
+
+enemy1 = Enemy(40, 50)
+enemy1.get_attack()
+
+enemy2 = Enemy(70, 90)
+enemy2.get_attack()
+
+
+
+
+'''Class Practice
 class Enemy:
     attackLow = 60
     attackHigh = 80
@@ -17,6 +37,7 @@ enemy1.get_Attack()
 
 enemy2 =Enemy()
 enemy2.get_Attack()
+'''
 
 
 '''
