@@ -5,6 +5,30 @@ import random
 
 class Enemy:
 
+    hp = 200
+
+    def __init__(self, attack_low, attack_high):
+        self.attack_low = attack_low
+        self.attack_high = attack_high
+
+    def get_attack(self):
+        print(self.attack_low)
+
+    def get_hp(self):
+        print("Hp is", self.hp)
+
+
+enemy1 = Enemy(40, 50)
+enemy1.get_attack()
+enemy1.get_hp()
+
+enemy2 = Enemy(70, 90)
+enemy2.get_attack()
+enemy2.get_hp()
+
+'''
+class Enemy:
+
     def __init__(self, attack_low, attack_high):
         self.attack_low = attack_low
         self.attack_high = attack_high
@@ -19,7 +43,7 @@ enemy1.get_attack()
 enemy2 = Enemy(70, 90)
 enemy2.get_attack()
 
-
+'''
 
 
 '''Class Practice
