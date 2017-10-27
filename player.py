@@ -2,11 +2,29 @@
 
 import random
 
+'''Class Practice'''
+class Enemy:
+    attackLow = 60
+    attackHigh = 80
+
+    def get_Attack(self):
+        print(self.attackLow)
+
+
+enemy1 = Enemy()
+enemy1.get_Attack()
+
+
+enemy2 =Enemy()
+enemy2.get_Attack()
+
+
+'''
 playerHp = 260
 enemyAttackLow = 60
 enemyAttackHigh = 80
 
-'''Use Continue in while loop'''
+#Use Continue in while loop
 
 while playerHp > 0:
     dmg = random.randrange(enemyAttackLow, enemyAttackHigh)
@@ -22,7 +40,7 @@ while playerHp > 0:
 
     print("You have low health. You've been teleported to nearest location")
     break
-
+'''
 
 #breaking from the while loop
 
