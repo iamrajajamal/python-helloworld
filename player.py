@@ -6,7 +6,27 @@ playerHp = 260
 enemyAttackLow = 60
 enemyAttackHigh = 80
 
+'''Use Continue in while loop'''
+
 while playerHp > 0:
+    dmg = random.randrange(enemyAttackLow, enemyAttackHigh)
+    playerHp = playerHp - dmg
+
+    if playerHp <= 30:
+        playerHp = 30
+
+    print("Enemy Strikes for", dmg, "points of damage. Current hp is", playerHp)
+
+    if playerHp > 30:
+        continue
+
+    print("You have low health. You've been teleported to nearest location")
+    break
+
+
+#breaking from the while loop
+
+'''while playerHp > 0:
     dmg = random.randrange(enemyAttackLow, enemyAttackHigh)
     playerHp = playerHp - dmg
 
@@ -31,5 +51,5 @@ while playerHp > 0:
     print("Enemy Strikes for", dmg, "points of damage. Current hp is", playerHp)
 
     if playerHp == 30:
-        print("You have low health. You've  been teleported to nearest location")
-        break
+        print("You have low health. You've been teleported to nearest location")
+        break  '''
